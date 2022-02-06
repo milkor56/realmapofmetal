@@ -2,9 +2,9 @@
 import express from 'express'
 const app = express();
 
-import { members } from './routes/members.mjs'
-import {bands} from './routes/bands.mjs'
-import {logger} from './logger.mjs'
+import { members } from './routes/members.js'
+import {bands} from './routes/bands.js'
+import {logger} from './logger.js'
 
 // const members = require('./routes/members')
 // const bands = require('./routes/bands')

@@ -1,4 +1,4 @@
-import { bands }  from '../data.mjs'
+import { bands }  from '../data.js'
 
 const getBands = (req,res)=>{
     res.status(200).json({success:true,data: bands})

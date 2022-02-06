@@ -6,7 +6,7 @@ import {
     getMembers,
     createMember,
     updateMember,
-    deleteMember}  from '../controllers/members.mjs'
+    deleteMember}  from '../controllers/members.js'
 
 members.route('/').get(getMembers).post(createMember)
 members.route('/:id').put(updateMember).delete(deleteMember)

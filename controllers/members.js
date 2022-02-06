@@ -1,4 +1,4 @@
-import { people } from '../data.mjs'
+import { people } from '../data.js'
 
 const getMembers = (req,res)=>{
     res.status(200).json({success:true,data: people})

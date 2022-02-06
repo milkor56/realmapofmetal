@@ -6,7 +6,7 @@ import {
     getBands,
     createBand,
     updateBand,
-    deleteBand}  from '../controllers/bands.mjs'
+    deleteBand}  from '../controllers/bands.js'
 
 bands.route('/').get(getBands).post(createBand)
 bands.route('/:id').put(updateBand).delete(deleteBand)
