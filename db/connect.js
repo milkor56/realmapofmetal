@@ -1,28 +1,26 @@
-import {Pool} from "pg"
-import {Client} from "pg"
-// import * as pg from 'pg'
-// const {Pool, Client} = pg
-
+import pg from "pg";
+const Client = pg.Client
+// const Pool = pg.Pool
 
 const credentials = {
     user: "postgres",
     host: "localhost",
     database: "rmm",
-    password: "pwd",
+    password: "abcde12345",
     port: 5432,
   };
 
   // Connect with a connection pool.
 
-async function poolDemo() {
-  const pool = new Pool();
-  // pool = new Pool(credentials);
-  pool.connect()
-  const now = await pool.query("SELECT NOW()");
-  await pool.end();
+// async function poolDemo() {
+//   // const pool = new Pool();
+//   const pool = new Pool(credentials);
+//   pool.connect()
+//   const now = await pool.query("SELECT NOW()");
+//   await pool.end();
 
-  return now;
-}
+//   return now;
+// }
 
 // Connect with a client.
 
@@ -38,11 +36,12 @@ async function clientDemo() {
 // Use a self-calling function so we can use async / await.
 
 (async () => {
-  const poolResult = await poolDemo();
-  console.log("Time with pool: " + poolResult.rows[0]["now"]);
+  // const poolResult = await poolDemo();
+  // console.log("Time with pool: " + poolResult.rows[0]["now"]);
 
   const clientResult = await clientDemo();
   console.log("Time with client: " + clientResult.rows[0]["now"]);
 })();
 
-export {clientDemo, poolDemo}
+// export {poolDemo, clientDemo}
+export {clientDemo}
