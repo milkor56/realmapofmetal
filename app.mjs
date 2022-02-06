@@ -1,9 +1,14 @@
-const express = require('express');
+// const express = require('express');
+import express from 'express'
 const app = express();
 
-const members = require('./routes/members')
-const bands = require('./routes/bands')
-const logger = require('./logger')
+import { members } from './routes/members.mjs'
+import {bands} from './routes/bands.mjs'
+import {logger} from './logger.mjs'
+
+// const members = require('./routes/members')
+// const bands = require('./routes/bands')
+// const logger = require('./logger')
 
 // static asset
 app.use(express.static('./methods-public'))

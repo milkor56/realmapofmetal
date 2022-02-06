@@ -1,4 +1,4 @@
-let { people } = require('../data')
+import { people } from '../data.mjs'
 
 const getMembers = (req,res)=>{
     res.status(200).json({success:true,data: people})
@@ -40,7 +40,7 @@ const deleteMember = (req, res) =>{
     return res.status(200).json({success:true,data:newPeople})
 }
 
-module.exports = {
+export {
     getMembers,
     createMember,
     updateMember,

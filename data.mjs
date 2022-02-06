@@ -12,5 +12,5 @@
       {id : 4, name: 'Rush', lat: 43.6532, long: 79.3832},
       {id : 5, name: 'Foo Fighters', lat: 47.6062, long: 122.3321},
   ]
-  module.exports = { bands, people }
+export { bands, people }
   

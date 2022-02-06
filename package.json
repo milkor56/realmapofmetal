@@ -7,9 +7,9 @@
   "name": "realmapofmetal",
   "description": "milkor56 here",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "app.mjs",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon app.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

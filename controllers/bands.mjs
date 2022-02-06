@@ -1,4 +1,4 @@
-let { bands } = require('../data')
+import { bands }  from '../data.mjs'
 
 const getBands = (req,res)=>{
     res.status(200).json({success:true,data: bands})
@@ -40,7 +40,7 @@ const deleteBand = (req, res) =>{
     return res.status(200).json({success:true,data:newBands})
 }
 
-module.exports = {
+export {
     getBands,
     createBand,
     updateBand,
