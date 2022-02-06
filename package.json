@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  },
+  "name": "realmapofmetal",
+  "description": "milkor56 here",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milkor56/realmapofmetal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milkor56/realmapofmetal/issues"
+  },
+  "homepage": "https://github.com/milkor56/realmapofmetal#readme"
+}
